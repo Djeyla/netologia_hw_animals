@@ -3,7 +3,7 @@ class Animal:
     limb = 4
     tail = 1
     voice = ''
-    average_speed = 3 #км/ч
+    average_speed = 3  # км/ч
 
     def presentation(self, name):
         self.name = name
@@ -13,16 +13,18 @@ class Animal:
         self.voice = voice
         print(voice)
 
-    def speed (self, average_speed):
+    def speed(self, average_speed):
         self.average_speed = average_speed
         print('Я пробегу за час', average_speed, 'километра')
 
-class Bird (Animal):
+
+class Bird(Animal):
     fly_speed = 0
 
     def can_i_fly(self, fly_speed):
         self.fly_speed = fly_speed
         print('А еще я могу летать со скоростью', fly_speed, 'км/ч')
+
 
 cow = Animal()
 cow.presentation('корова')
